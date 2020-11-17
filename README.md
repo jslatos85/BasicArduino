@@ -12,6 +12,21 @@ I'm going to learn how to use an Arduino, and make awesome things with it!
 ### Description & Code
 
 ```C++
+void setup() {
+  
+  pinMode(13, OUTPUT);
+  Serial.begin(9600); // This turns on my Serial Monitor
+  Serial.print("Hello World!");
+}
+
+void loop() {
+  Serial.println("bonk");
+  
+  digitalWrite(13, HIGH);           
+  delay(250);                       
+  digitalWrite(13, LOW);            
+  delay(250);                     
+}
 
 ```
 
